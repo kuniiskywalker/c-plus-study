@@ -8,12 +8,12 @@ class stack{
     int tos;
 
     public:
-        void init();
+        stack();
         void push(char ch);
         char pop();
 };
 
-void stack::init(){
+stack::stack(){
     tos = 0;
 }
 
@@ -31,7 +31,6 @@ int main(){
     stack s1;
     char ch;
 
-    s1.init();
     s1.push('x');
     ch = s1.pop();
 
