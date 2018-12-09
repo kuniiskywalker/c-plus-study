@@ -1,22 +1,11 @@
-/**
- * ヘッダ
- * C言語とは違って.hつけなくてもよい
- */
-#include <iostream>
-#include "Sample.h" 
-
-/**
- * 標準名前空間
- * coutをprintf的なやつ
- * 末尾にstdをつけることによりstd::coutとかしてしなくてもcoutだけでよびだせるよ
- */
-using namespace std;
+#include "car.h" 
 
 int main()
 {
-    Sample s;
-    s.a = 1;
-    s.func1();
+    CCar c;
+    c.supply(10);
+    c.move();
+    c.move();
  
     return 0;
 } 

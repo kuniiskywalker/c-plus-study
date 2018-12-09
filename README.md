@@ -2,7 +2,7 @@
 # Build
 
 ```
-c++ main.cpp Sample.cpp
+c++ main.cpp car.cpp
 ```
 
 # Exec
