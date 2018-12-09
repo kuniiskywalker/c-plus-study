@@ -2,7 +2,7 @@
 # Build
 
 ```
-c++ main.cpp sample.cpp
+c++ main.cpp Sample.cpp
 ```
 
 # Exec

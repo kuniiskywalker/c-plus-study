@@ -2,13 +2,16 @@
 #define _SAMPLE_H_
  
 // クラス宣言
-class CSample
+class Sample
 {
 public:
-    void set(int num);  // m_numに値を設定する
-    int get();          // m_numの値を取得する
+    int a;
 private:
-    int m_num;
+    int b;
+public:
+    void func1();
+private:
+    void func2();
 };
  
 #endif //_SAMPLE_H_
