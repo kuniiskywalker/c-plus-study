@@ -12,6 +12,9 @@
 using namespace std;
  
 int main(){
-    cout << "HelloWorld." << endl;
+    int a;
+    cout << "plaese input number" << endl;
+    cin >> a;
+    cout << "a=" << a << endl;
     return 0;
 }
