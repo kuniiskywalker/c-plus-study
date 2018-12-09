@@ -12,9 +12,10 @@
 using namespace std;
  
 int main(){
-    int a;
-    cout << "plaese input number" << endl;
-    cin >> a;
-    cout << "a=" << a << endl;
+    string s, t;
+    t = "Input string is";
+    cout << "Please input string: ";
+    cin >> t;
+    cout << t+s << "." << endl;
     return 0;
 }
