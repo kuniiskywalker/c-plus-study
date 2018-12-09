@@ -14,14 +14,13 @@ using namespace std;
 
 int main()
 {
-    CSample obj;  // CSampleをインスタンス化
-    int num;
-     
-    cout << "整数を入力して下さい:" << endl;
-    cin >> num;
-     
-    obj.set( num );  // CSampleのメンバ変数をセット
-    cout << obj.get() << endl;  // メンバ変数の値を出力
+    CSample obj1, obj2;  // CSampleのインスタンスを複数生成
+
+    obj1.set( 1 );    
+    obj2.set( 2 );    
+ 
+    cout << obj1.get() << endl;
+    cout << obj2.get() << endl;
  
     return 0;
 } 
