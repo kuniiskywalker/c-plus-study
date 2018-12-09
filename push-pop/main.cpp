@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
+#define SIZE 5
+
 class stack{
 
-    char stck[5];
+    char stck[SIZE];
 
     int tos;
 
@@ -11,6 +13,7 @@ class stack{
         stack();
         void push(char ch);
         char pop();
+        int length();
 };
 
 stack::stack(){
@@ -18,21 +21,43 @@ stack::stack(){
 }
 
 void stack::push(char ch){
+    if(tos == SIZE) {
+        cout << "tos is full";
+        return;
+    }
     stck[tos] = ch; 
     tos++;
 }
 
 char stack::pop(){
+    if(tos < 0) {
+        cout << "tos is empty";
+        return 0;
+    }
     tos--;
     return stck[tos];
 }
 
+int stack::length(){
+    int i = 0;
+    while(stck[i]){
+        i++;
+    }
+    return i;
+}
+
 int main(){
     stack s1;
-    char ch;
+    int i;
 
-    s1.push('x');
-    ch = s1.pop();
+    s1.push('a');
+    s1.push('b');
+    s1.push('c');
+    s1.push('d');
+    s1.push('e');
+    s1.push('f');
 
-    cout << ch << ".";
+    for(i = 0; i < s1.length(); i++){
+        cout << s1.pop() << ".";
+    }
 }
